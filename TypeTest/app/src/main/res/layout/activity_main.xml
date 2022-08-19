@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="32dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="나만의 유형검사"
+                android:textSize="32sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/nameEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:width="250dp"
+                android:hint="이름을 입력하세요."
+
+                />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingVertical="16dp">
+
+                <TextView
+                    android:id="@+id/Q1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="질문 1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/agreeQ1"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/agreeQ1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="그렇다"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/Q1" />
+
+                <SeekBar
+                    android:id="@+id/seekbarQ1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:max="5"
+                    android:min="1"
+                    android:progress="3"
+                    app:layout_constraintBottom_toBottomOf="@id/agreeQ1"
+                    app:layout_constraintEnd_toStartOf="@id/disagreeQ1"
+                    app:layout_constraintStart_toEndOf="@id/agreeQ1"
+                    app:layout_constraintTop_toTopOf="@id/agreeQ1" />
+
+
+                <TextView
+                    android:id="@+id/disagreeQ1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="그렇지 않다"
+                    app:layout_constraintBottom_toBottomOf="@id/agreeQ1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/agreeQ1" />
+
+
+                <TextView
+                    android:id="@+id/Q2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="질문 2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/agreeQ1" />
+
+                <TextView
+                    android:id="@+id/agreeQ2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="그렇다"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/Q2" />
+
+                <SeekBar
+                    android:id="@+id/seekbarQ2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:max="5"
+                    android:min="1"
+                    android:progress="3"
+                    app:layout_constraintBottom_toBottomOf="@id/agreeQ2"
+                    app:layout_constraintEnd_toStartOf="@id/disagreeQ2"
+                    app:layout_constraintStart_toEndOf="@id/agreeQ2"
+                    app:layout_constraintTop_toTopOf="@id/agreeQ2" />
+
+                <TextView
+                    android:id="@+id/disagreeQ2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="그렇지 않다"
+                    app:layout_constraintBottom_toBottomOf="@id/agreeQ2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/agreeQ2" />
+
+
+                <TextView
+                    android:id="@+id/Q3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="질문 3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/agreeQ2" />
+
+                <TextView
+                    android:id="@+id/agreeQ3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="그렇다"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/Q3" />
+
+                <SeekBar
+                    android:id="@+id/seekbarQ3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:max="5"
+                    android:min="1"
+                    android:progress="3"
+                    app:layout_constraintBottom_toBottomOf="@id/agreeQ3"
+                    app:layout_constraintEnd_toStartOf="@id/disagreeQ3"
+                    app:layout_constraintStart_toEndOf="@id/agreeQ3"
+                    app:layout_constraintTop_toTopOf="@id/agreeQ3" />
+
+
+                <TextView
+                    android:id="@+id/disagreeQ3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="그렇지 않다"
+                    app:layout_constraintBottom_toBottomOf="@id/agreeQ3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/agreeQ3" />
+
+
+                <TextView
+                    android:id="@+id/Q4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="질문 4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/agreeQ3" />
+
+                <TextView
+                    android:id="@+id/agreeQ4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="그렇다"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/Q4" />
+
+                <SeekBar
+                    android:id="@+id/seekbarQ4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:max="5"
+                    android:min="1"
+                    android:progress="3"
+                    app:layout_constraintBottom_toBottomOf="@id/agreeQ4"
+                    app:layout_constraintEnd_toStartOf="@id/disagreeQ4"
+                    app:layout_constraintStart_toEndOf="@id/agreeQ4"
+                    app:layout_constraintTop_toTopOf="@id/agreeQ4" />
+
+
+                <TextView
+                    android:id="@+id/disagreeQ4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="그렇지 않다"
+                    app:layout_constraintBottom_toBottomOf="@id/agreeQ4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/agreeQ4" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="제출하기"
+                android:onClick="clickSubmit"
+                />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

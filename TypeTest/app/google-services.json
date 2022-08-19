@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "517551539774",
+    "project_id": "typetest-e6d6c",
+    "storage_bucket": "typetest-e6d6c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:517551539774:android:6d8b8371f07ed61215b36f",
+        "android_client_info": {
+          "package_name": "com.thekim12.typetest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "517551539774-o0p9irgvmsk2uk5sjk28oo37qtcrtl3p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLi8Pnvah9wMvOFfht0PQDQkH5uK-t-MQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "517551539774-o0p9irgvmsk2uk5sjk28oo37qtcrtl3p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
