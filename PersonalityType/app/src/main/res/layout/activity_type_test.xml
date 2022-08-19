@@ -87,6 +87,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="64dp"
                 android:layout_marginTop="16dp"
+                android:onClick="clickSubmit"
                 android:text="나의 유형 확인하기" />
 
 

@@ -22,5 +22,10 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
+    fun clickTypeTest(view: View){
+        var intent = Intent(this@MainActivity, TypeTestActivity::class.java)
+        startActivity(intent)
+    }
+
     
 }

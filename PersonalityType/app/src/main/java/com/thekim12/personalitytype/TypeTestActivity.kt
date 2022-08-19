@@ -16,6 +16,8 @@ class TypeTestActivity : AppCompatActivity() {
 
     fun clickSubmit(view: View) {
         var seekbar: SeekBar = findViewById(R.id.seekbarQ1)
-        Toast.makeText(view.context, seekbar.progress, Toast.LENGTH_LONG).show()
+        var intent = Intent(this@TypeTestActivity, MainActivity::class.java)
+        intent.putExtra("seekbarProgress", seekbar.progress)
+        startActivity(intent)
     }
 }

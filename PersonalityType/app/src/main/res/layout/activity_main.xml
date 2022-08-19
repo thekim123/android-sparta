@@ -176,6 +176,13 @@
                     android:onClick="clickPersonalityButton"
                     android:text="ENTJ" />
             </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonTypeTest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="성격 유형 검사하기"
+                android:onClick="clickTypeTest"></Button>
         </LinearLayout>
     </ScrollView>
 
