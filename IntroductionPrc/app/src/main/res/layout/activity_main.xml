@@ -102,7 +102,7 @@
                 android:layout_marginVertical="10dp"
                 android:width="200dp"
                 android:onClick="showThink"
-                android:text="생각확인" />
+                android:text="말하기" />
         </LinearLayout>
 
     </ScrollView>

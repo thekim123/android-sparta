@@ -1,5 +1,6 @@
 package com.thekim12.introductionprc
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -17,7 +18,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun showThink(view :View){
-        var message = rhannThink.text
-        Toast.makeText(view.context, message, Toast.LENGTH_LONG).show()
+        var message = rhannThink.text.toString()
+        var intent = Intent(this@MainActivity, DetailActivity::class.java)
+        intent.putExtra("think", message)
+        startActivity(intent)
     }
 }
